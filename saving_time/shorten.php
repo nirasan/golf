@@ -1,4 +1,4 @@
-<?list($h,$m)=explode(':',fgets(STDIN));$h=$h%12;$m=(int)($m/5);for($i=0;$i<12;$i++){$c[$i]=2*$i-$h-$m?$i-$h?$i-$m?o:m:h:x;}
+<?list($h,$m)=explode(':',fgets(STDIN));$h=$h%12;$m=(int)($m/5);for($i=0;$i<12;$i++){$c[$i]=$i-$h||$i-$m?$i-$h?$i-$m?o:m:h:x;}
 $f=<<<EOL
 %9s
 %5s%8s

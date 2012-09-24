@@ -4,7 +4,7 @@
     $h = $h % 12;
     $m = (int)($m / 5);
     for ($i = 0; $i < 12; $i++) {
-        $c[$i] = 2*$i-$h-$m ? $i-$h ? $i-$m ? o : m : h : x;
+        $c[$i] = $i-$h||$i-$m ? $i-$h ? $i-$m ? o : m : h : x;
     }
     $format = <<<EOL
 %9s
